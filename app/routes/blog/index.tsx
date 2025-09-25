@@ -1,5 +1,5 @@
 import type { Route } from "./+types/index";
-import { PostMeta } from "~/types";
+import type { PostMeta } from "~/types";
 import PostCard from "~/components/PostCard";
 
 export async function loader({ request }: Route.LoaderArgs): Promise<{ posts: PostMeta[] }> {
